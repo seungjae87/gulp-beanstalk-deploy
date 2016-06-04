@@ -60,7 +60,7 @@ var wait4deploy = function(bean, envName) {
     })
     var bucket = new AWS.S3({
         params: {
-            Bucket: opts.bucketConfig.Bucket,
+            Bucket: opts.s3.bucket,
             Key: path.join(opts.applicationName, opts.archive.name)
         }
     });
@@ -81,7 +81,7 @@ var wait4deploy = function(bean, envName) {
         })
         .then(function() {
           gutil.log('Start to Upload souceBundle to %s/%s',
-              gutil.colors.cyan(opts.bucketConfig.Bucket),
+              gutil.colors.cyan(opts.s3.bucket),
               gutil.colors.cyan(opts.applicationName+'/'+opts.archive.name)
           )
           var upload = bucket.upload({ Body: new Buffer(data) })

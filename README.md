@@ -25,8 +25,8 @@ gulp.task('deploy', function(cb) {
     path: __dirname,
     name: 'archive.zip'
   },
-  bucketConfig: {
-    Bucket: 'S3 Bucket'
+  s3: {
+    bucket: 'S3 Bucket'
   }
 }, cb);
 ```
