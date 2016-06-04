@@ -1,12 +1,11 @@
 var fs      = require('fs')
  ,  path    = require('path')
  ,  Promise = require('bluebird')
- ,  through = require('through2').obj
- ,  plexer  = require('plexer')
  ,  _       = require('lodash')
  ,  gutil   = require('gulp-util')
- ,  zip     = require('gulp-zip')
  ,  AWS     = require('aws-sdk')
+
+function logger(fmt,)
 
 var logTransition = function(envName, prevStatus, status) {
     var _color = {
@@ -18,7 +17,7 @@ var logTransition = function(envName, prevStatus, status) {
 
     var colorPrev = _color[prevStatus.Color] || gutil.colors.grey
     var colorNew  = _color[status.Color] || gutil.colors.grey
-    gutil.log('Enviroment %s transitioned from %s(%s) to %s(%s)',
+    gutil.log('Enviroment %s health has transitioned from %s(%s) to %s(%s)',
         gutil.colors.cyan(envName),
         colorPrev(prevStatus.HealthStatus),
         colorPrev(prevStatus.Status),
@@ -116,7 +115,7 @@ var wait4deploy = function(bean, envName) {
             else
                 return envInfo
         })
-        .then(function() { cb(null, file) })
+        .then(function() { cb(null, 'ok') })
         .catch(cb)
       }
     });
