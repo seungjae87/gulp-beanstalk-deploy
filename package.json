@@ -1,6 +1,6 @@
 {
   "name": "gulp-beanstalk-deploy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A module to make easy AWS Elasticbeanstalk deployment",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,13 @@
     "upload"
   ],
   "author": "Seungjae Lee <seungjae@dable.io>",
+  "contributors": [
+    {
+      "name": "Seungjae Lee",
+      "email": "seungjae@dable.io",
+      "url": "http://a0ly.github.io/"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/a0ly/gulp-beanstalk-deploy/issues"
@@ -32,10 +39,10 @@
   "homepage": "https://github.com/a0ly/gulp-beanstalk-deploy#readme",
   "dependencies": {
     "aws-sdk": "^2.3.16",
-    "bluebird": "^3.4.0",
     "chai": "^3.5.0",
     "gulp-util": "^3.0.7",
     "lodash": "^4.13.1",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "q": "^1.4.1"
   }
 }
