@@ -2,6 +2,7 @@ gulp-beanstalk-deploy
 =====
 [![Build Status](https://travis-ci.org/a0ly/gulp-beanstalk-deploy.svg?branch=master)](https://travis-ci.org/a0ly/gulp-beanstalk-deploy)
 [![npm version](https://badge.fury.io/js/gulp-beanstalk-deploy.svg)](https://badge.fury.io/js/gulp-beanstalk-deploy)
+[![Dependency Status](https://david-dm.org/a0ly/gulp-beanstalk-deploy.svg)](https://david-dm.org/a0ly/gulp-beanstalk-deploy)
 
 > A gulp plugin for deployment your application to AWS Elastic Beanstalk
 
@@ -19,8 +20,8 @@ npm install gulp-beanstalk-deploy
 gulp.task('deploy', function(cb) {
   eb({
     // options here
-  })
-}, cb);
+  }, cb)
+});
 ```
 
 ### Options
