@@ -1,6 +1,6 @@
 {
   "name": "gulp-beanstalk-deploy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module to make easy AWS Elasticbeanstalk deployment",
   "main": "index.js",
   "scripts": {
@@ -42,7 +42,7 @@
     "chai": "^3.5.0",
     "gulp-util": "^3.0.7",
     "lodash": "^4.13.1",
-    "mocha": "^2.5.3",
+    "mocha": "^3.0.2",
     "q": "^1.4.1"
   }
 }
