@@ -104,7 +104,8 @@ gulp.task('deploy', function(cb) {
     applicationName:'gulp-beanstalk-deploy',
     environmentName: 'gulp-beanstalk-deploy-env',
     versionLabel: '1.0.0',
-    sourceBundle: './archive.zip'
+    sourceBundle: './archive.zip',
+    description: 'description here'
   }, cb);
 });
 ```
