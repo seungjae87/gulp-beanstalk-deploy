@@ -66,6 +66,11 @@ Your application enviroment name. It must be provided.
 
 Your deployment description.
 
+##### settings
+* Type: `Array`
+
+Your environment setting parameters.
+
 ##### waitForDeploy
 * Type: `boolean`
 * Default: true
