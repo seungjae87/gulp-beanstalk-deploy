@@ -39,7 +39,7 @@
   "homepage": "https://github.com/a0ly/gulp-beanstalk-deploy#readme",
   "dependencies": {
     "aws-sdk": "^2.3.16",
-    "chai": "^3.5.0",
+    "chai": "^4.1.0",
     "gulp-util": "^3.0.7",
     "lodash": "^4.13.1",
     "mocha": "^3.0.2",
