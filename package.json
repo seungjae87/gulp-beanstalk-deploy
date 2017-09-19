@@ -1,6 +1,6 @@
 {
   "name": "gulp-beanstalk-deploy",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A module to make easy AWS Elasticbeanstalk deployment",
   "main": "index.js",
   "scripts": {
@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/a0ly/gulp-beanstalk-deploy#readme",
   "dependencies": {
-    "aws-sdk": "^2.3.16",
+    "aws-sdk": "^2.118.0",
     "chai": "^4.1.0",
     "gulp-util": "^3.0.7",
     "lodash": "^4.13.1",
