@@ -2,8 +2,8 @@ gulp-beanstalk-deploy
 =====
 [![Build Status](https://travis-ci.org/a0ly/gulp-beanstalk-deploy.svg?branch=master)](https://travis-ci.org/a0ly/gulp-beanstalk-deploy)
 [![npm version](https://badge.fury.io/js/gulp-beanstalk-deploy.svg)](https://badge.fury.io/js/gulp-beanstalk-deploy)
-[![Dependency Status](https://img.shields.io/npm/dt/gulp-beanstalk-deploy.svg)](https://david-dm.org/a0ly/gulp-beanstalk-deploy)
-[![Dependency Status](https://david-dm.org/a0ly/gulp-beanstalk-deploy.svg)](https://www.npmjs.com/package/gulp-beanstalk-deploy)
+[![Downloads](https://img.shields.io/npm/dt/gulp-beanstalk-deploy.svg)](https://www.npmjs.com/package/gulp-beanstalk-deploy)
+[![Dependency Status](https://david-dm.org/a0ly/gulp-beanstalk-deploy.svg)](https://david-dm.org/a0ly/gulp-beanstalk-deploy)
 
 > A gulp plugin for deployment your application to AWS Elastic Beanstalk
 
