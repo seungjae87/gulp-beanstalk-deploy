@@ -105,7 +105,7 @@ archive file path to upload. It must exists in your local file system, which mea
 ```
 * format:
 ```javasctipt
-[{ Key: 'key', Value: 'value' }, ...]
+[{'key': 'value' }, ...]
 ```
 
 Tag to set.
@@ -118,7 +118,7 @@ Tag to set.
 ```
 * format:
 ```javasctipt
-[{ Key: 'key', Value: 'value' }, ...]
+[{'key': 'value' }, ...]
 ```
 
 Tag to remove.
