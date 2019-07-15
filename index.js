@@ -5,6 +5,7 @@ var setup  = require('./lib/setup')
 ,   createApplicationVersion = aws.createApplicationVersion
 ,   startRollback = aws.startRollback
 ,   updateEnvironment = aws.updateEnvironment
+,   updateTag = aws.updateTag
 ,   waitdeploy = aws.waitdeploy;
 
 module.exports = function(opts, cb) {
@@ -25,6 +26,19 @@ module.exports = function(opts, cb) {
   initialTasks
   .then(function(version) {
     return updateEnvironment(sets, version)
+  })
+  .then(function(result) {
+    if(opts.waitForDeploy === undefined || opts.waitForDeploy === null) {
+      opts.waitForDeploy = true;
+    }
+    if(opts.waitForDeploy) {
+      return waitdeploy(sets, opts.checkIntervalSec || 2000)
+    } else {
+      return result;
+    }
+  })
+  .then(function() {
+    return updateTag(sets)
   })
   .then(function(result) {
     if(opts.waitForDeploy === undefined || opts.waitForDeploy === null) {

@@ -1,6 +1,6 @@
 {
   "name": "gulp-beanstalk-deploy",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A module to make easy AWS Elasticbeanstalk deployment",
   "main": "index.js",
   "scripts": {
