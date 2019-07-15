@@ -139,8 +139,8 @@ gulp.task('deploy', function(cb) {
     sourceBundle: './archive.zip',
     description: 'description here',
     account_id: 'Your AWS accountId',
-    tagsToAdd: [{'Key': 'key', Value: 'value'}],
-    tagsToRemove: [{'Key': 'key', Value: 'value'}]
+    tagsToAdd: [{'key': 'value'} ...],
+    tagsToRemove: [{'Key': 'value'} ...]
   }, cb);
 });
 ```
