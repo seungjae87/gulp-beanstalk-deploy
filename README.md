@@ -98,27 +98,27 @@ Interval time to check deploying status. (sec)
 archive file path to upload. It must exists in your local file system, which means the archive file must be prepared before deployment task.
 
 ##### tagsToAdd
-* Type: `dict Array`
+* Type: `dict`
 * Default:
 ```javascript
 []
 ```
 * format:
 ```javasctipt
-[{'key': 'value' }, ...]
+{'key': 'value' ...}
 ```
 
 Tag to set.
 
 ##### tagsToRemove
-* Type: `dict Array`
+* Type: `dict`
 * Default:
 ```javascript
 []
 ```
 * format:
 ```javasctipt
-[{'key': 'value' }, ...]
+{'key': 'value' ...}
 ```
 
 Tag to remove.
@@ -139,8 +139,8 @@ gulp.task('deploy', function(cb) {
     sourceBundle: './archive.zip',
     description: 'description here',
     account_id: 'Your AWS accountId',
-    tagsToAdd: [{'key': 'value'} ...],
-    tagsToRemove: [{'Key': 'value'} ...]
+    tagsToAdd: {'key': 'value' ...},
+    tagsToRemove: {'Key': 'value' ...}
   }, cb);
 });
 ```
